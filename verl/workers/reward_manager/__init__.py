@@ -17,9 +17,13 @@ from .batch import BatchRewardManager
 from .dapo import DAPORewardManager
 from .naive import NaiveRewardManager
 from .prime import PrimeRewardManager
+from .custom_reward_dapo import CustomRewardDAPORewardManager
+from .MultiTurnDenseRewardManager import MultiTurnDenseRewardManager
 
 # Note(haibin.lin): no need to include all reward managers here in case of complicated dependencies
 __all__ = [
+    "MultiTurnDenseRewardManager"
+    "CustomRewardDAPORewardManager", 
     "BatchRewardManager",
     "DAPORewardManager",
     "NaiveRewardManager",
